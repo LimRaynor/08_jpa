@@ -351,7 +351,7 @@ class EntityLifeCycleTest {
         //then
         Menu refoundMenu = entityManager.find(Menu.class, menuCode);
         assertNull(refoundMenu);
-        
+
         transaction.rollback(); // 삭제는 했으나 롤백해서 실제로 삭제되지는 않음
     }
 }
